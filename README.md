@@ -1,6 +1,6 @@
-# Weather MCP Server Powered by the Open-Meteo API
+# Weather MCP Server
 
-This MCP server interfaces with the [Open-Meteo API](https://open-meteo.com/en/docs) and offers tools to fetch current weather conditions and weather forecasts for any location worldwide.
+This MCP server interfaces with the open-source [Open-Meteo API](https://open-meteo.com/en/docs) and offers tools to fetch current weather conditions and weather forecasts for any location worldwide.
 
 ## Installation
 
@@ -32,22 +32,7 @@ uv run
 
 1. Open `claude_desktop_config.js` in an editor:
 
-   File location:
-   - MacOS / Linux `~/Library/Application/Support/Claude/claude_desktop_config.json`
-   - Windows `AppData\Claude\claude_desktop_config.json`
-
 2. Find the full path to `uv`:
-   - MacOS / Linux:
-
-   ```bash
-   which uv
-   ```
-
-   - Windows:
-
-   ```bash
-   where uv
-   ```
 
 3. In `claude_desktop_config.js`
 
@@ -62,7 +47,7 @@ uv run
            "mcp[cli]",
            "mcp",
            "run",
-           "/absolute/path/to/open-meteo-weather/server.py"
+           "/absolute/path/to/mcp-server-weather/server.py"
          ]
        }
      }
