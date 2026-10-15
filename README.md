@@ -30,9 +30,9 @@ uv run
 
 ## Run MCP server in Claude Desktop
 
-1. Open `claude_desktop_config.js` in an editor:
+1. Open `claude_desktop_config.js` in an editor
 
-2. Find the full path to `uv`:
+2. Find the full path to `uv`
 
 3. In `claude_desktop_config.js`
 
