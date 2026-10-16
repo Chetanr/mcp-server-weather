@@ -5,28 +5,22 @@ This MCP server interfaces with the open-source [Open-Meteo API](https://open-me
 ## Installation
 
 ```bash
-uv run
+uv sync
 ```
 
 ## Development
 
-1. Start the virtual environment
+Run the server in dev mode with the [MCP Inspector](https://github.com/modelcontextprotocol/inspector):
 
-   ```bash
-   source .venv/bin/activate
-   ```
+```bash
+uv run mcp dev src/mcp_server_weather/server.py
+```
 
-   NOTE: To stop the virtual environment:
+Run the test suite:
 
-   ```bash
-   deactivate
-   ```
-
-2. Run MCP server in dev mode with the [MCP Inspector](https://github.com/modelcontextprotocol/inspector):
-
-   ```bash
-   mcp dev server.py
-   ```
+```bash
+uv run pytest
+```
 
 ## Run MCP server in Claude Desktop
 
@@ -43,11 +37,11 @@ uv run
          "command": "/absolute/path/to/uv",
          "args": [
            "run",
-           "--with",
-           "mcp[cli]",
+           "--directory",
+           "/absolute/path/to/mcp-server-weather",
            "mcp",
            "run",
-           "/absolute/path/to/mcp-server-weather/server.py"
+           "/absolute/path/to/mcp-server-weather/src/mcp_server_weather/server.py"
          ]
        }
      }
